@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fixbit | Technical support </title>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>📞 +994 50 123 45 67 | ✉ support@fixbit.az</p>
+        </div>
+
+        <!-- Navbar -->
+        <header class="navbar"> 
+            <div class="logo">
+                <a href="Main.html">
+                    <img src="Images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="Images/home.png" alt="Əsas Səhifə İkonu" class="nav-icon">
+                            Əsas Səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Xidmetler.html">
+                            <img src="Images/maintenance.png" alt="Xidmətlər İkonu" class="nav-icon">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="suallar.html">
+                            <img src="Images/conversation.png" alt="Suallar İkonu" class="nav-icon">
+                            Suallar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Elaqe.html">
+                            <img src="Images/phone.png" alt="Əlaqə İkonu" class="nav-icon">
+                            Əlaqə
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        
+    </div>
+    <!-- navbar -->
+    
+
+
+    <section class="faq-section">
+        <h2>Ən Çox Verilən Suallar</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">
+                    1. Texniki dəstəyə necə müraciət edə bilərəm?
+                    <span class="faq-user"> — Elvin tərəfindən</span>
+                </button>
+                <div class="faq-answer">Bizimlə WhatsApp, canlı chat və ya əlaqə formu vasitəsilə əlaqə saxlaya bilərsiniz.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    2. Dəstək xidməti neçə saat ərzində cavab verir?
+                    <span class="faq-user"> — Aysel tərəfindən</span>
+                </button>
+                <div class="faq-answer">Əksər hallarda 1 saat ərzində cavab veririk. Çalışırıq ki, daha sürətli olaq!</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    3. Hansı texniki problemlərlə bağlı kömək ala bilərəm?
+                    <span class="faq-user"> — Murad tərəfindən</span>
+                </button>
+                <div class="faq-answer">Kompüter, şəbəkə, proqram təminatı və daha çox məsələlərdə dəstək göstəririk.</div>
+            </div>
+        </div>
+    </section>
+    
+    
+      <section class="message-section">
+        <h2>Bize Sual Verin</h2>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Adınız" required>
+          <input type="email" name="email" placeholder="Email ünvanınız" required>
+          <textarea name="message" rows="5" placeholder="Sualınız..." required></textarea>
+          <button type="submit">Göndər</button>
+        </form>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Fixbit - Bütün hüquqlar qorunur.</p>
+          <nav class="footer-nav">
+            <a href="#">Əsas səhifə</a>
+            <a href="#xidmetler">Xidmətlər</a>
+            <a href="#faq">Suallar</a>
+            <a href="#elaqe">Əlaqə</a>
+          </nav>
+        </div>
+      </footer>
+    </div>                  
+</body>
+
+
+
+<script>
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const answer = btn.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</html>

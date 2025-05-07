@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fixbit | Technical support </title>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>📞 +994 50 123 45 67 | ✉ support@fixbit.az</p>
+        </div>
+
+        <!-- Navbar -->
+        <header class="navbar"> 
+            <div class="logo">
+                <a href="Main.html">
+                    <img src="Images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="Images/home.png" alt="Əsas Səhifə İkonu" class="nav-icon">
+                            Əsas Səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Xidmetler.html">
+                            <img src="Images/maintenance.png" alt="Xidmətlər İkonu" class="nav-icon">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="suallar.html">
+                            <img src="Images/conversation.png" alt="Suallar İkonu" class="nav-icon">
+                            Suallar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Elaqe.html">
+                            <img src="Images/phone.png" alt="Əlaqə İkonu" class="nav-icon">
+                            Əlaqə
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+    <!-- navbar -->
+    <section class="services-section">
+        <h2 class="section-title">Xidmətlərimiz</h2>
+        <div class="services-grid">
+            <div class="service-card" style="background-image: url('Images/Tez-tez\ verilen\ suallar.png');">
+                <div class="overlay">
+                    <h3>Kompüter Təmir Xidməti</h3>
+                    <p>Avadanlıqların təmiri, diaqnostika və hissə dəyişimi.</p>
+                    <a href="#" class="btn-details">Daha ətraflı</a>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('Images/Lohve.jpg');">
+                
+                <div class="overlay">
+                    <h3>Proqram Təminatı</h3>
+                    <p>Proqramların yazılması və yenilənməsi.</p>
+                    <a href="#" class="btn-details">Daha ətraflı</a>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('Images/Support.jpg');">
+                <div class="overlay">
+                    <h3>Kamera Qurulması</h3>
+                    <p>Təhlükəsizlik kameralarının quraşdırılması və sazlanması.</p>
+                    <a href="#" class="btn-details">Daha ətraflı</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+      <section class="message-section">
+        <h2>Bize Mesaj Göndərin</h2>
+        <form class="contact-form">
+          <input type="text" name="name" placeholder="Adınız" required>
+          <input type="email" name="email" placeholder="Email ünvanınız" required>
+          <textarea name="message" rows="5" placeholder="Mesajınız..." required></textarea>
+          <button type="submit">Göndər</button>
+        </form>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Fixbit - Bütün hüquqlar qorunur.</p>
+          <nav class="footer-nav">
+            <a href="#">Əsas səhifə</a>
+            <a href="#xidmetler">Xidmətlər</a>
+            <a href="#faq">Suallar</a>
+            <a href="#elaqe">Əlaqə</a>
+          </nav>
+        </div>
+      </footer>
+    </div>                  
+</body>
+
+
+
+<script>
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const answer = btn.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</html>

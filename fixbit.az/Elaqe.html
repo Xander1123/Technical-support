@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fixbit | Technical support </title>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>📞 +994 10 209 08 88 | ✉ support@fixbit.az</p>
+        </div>
+        
+
+        <!-- Navbar -->
+        <header class="navbar"> 
+            <div class="logo">
+                <a href="Main.html">
+                    <img src="Images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="Images/home.png" alt="Əsas Səhifə İkonu" class="nav-icon">
+                            Əsas Səhifə
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Xidmetler.html">
+                            <img src="Images/maintenance.png" alt="Xidmətlər İkonu" class="nav-icon">
+                            Xidmətlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="suallar.html">
+                            <img src="Images/conversation.png" alt="Suallar İkonu" class="nav-icon">
+                            Suallar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Elaqe.html">
+                            <img src="Images/phone.png" alt="Əlaqə İkonu" class="nav-icon">
+                            Əlaqə
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+    <!-- navbar -->
+
+
+
+    <section class="contact-section">
+        <h2>Bizimlə Əlaqə</h2>
+        <div class="contact-cards">
+            <!-- WhatsApp -->
+            <div class="contact-card">
+                <img src="Images/whatsapp (1).png" alt="WhatsApp">
+                <h3>WhatsApp</h3>
+                <p>Bizimlə WhatsApp üzərindən birbaşa əlaqə saxlayın.</p>
+                <a href="https://wa.me/994XXXXXXXXX" target="_blank">Əlaqə Saxla</a>
+            </div>
+
+            <!-- Live Chat -->
+            <div class="contact-card">
+                <img src="Images/live-chat.png" alt="Live Chat">
+                <h3>Canlı Söhbət</h3>
+                <p>Sayt üzərindən canlı dəstək ilə əlaqə qurun.</p>
+                <a href="#">Söhbətə Başla</a>
+            </div>
+
+            <!-- Location / Instagram -->
+            <div class="contact-card">
+                <img src="Images/location.png" alt="Location">
+                <h3>Ünvan & Instagram</h3>
+                <p>Bizi yerində ziyarət edin və Instagram səhifəmizə baxın.</p>
+                <a href="https://www.instagram.com/sizin_səhifə/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+    <div class="map-container" style="text-align:center; margin-top: 30px;">
+        <h3>Ünvanımız</h3>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.651221206962!2d49.86709221537855!3d40.40926197936426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d3c0e0c12c3%3A0x7a3840fc342b3b62!2sBaku%2C%20Azerbaijan!5e0!3m2!1sen!2sus!4v1630000000000" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+    
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Fixbit - Bütün hüquqlar qorunur.</p>
+            <nav class="footer-nav">
+                <a href="#">Əsas səhifə</a>
+                <a href="#xidmetler">Xidmətlər</a>
+                <a href="#faq">Suallar</a>
+                <a href="#elaqe">Əlaqə</a>
+            </nav>
+        </div>
+    </footer>
+    </div>
+</body>
+
+
+
+<script>
+    const questions = document.querySelectorAll('.faq-question');
+
+    questions.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const answer = btn.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</html>
